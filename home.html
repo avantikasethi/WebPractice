@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+        <script>
+                    function showPassword(){
+
+                        let inputElement = document.getElementById("mypass");
+                        inputElement.type = "text";
+                        console.log("This is the inputElement variable");
+                        console.log(inputElement);
+                    }
+
+                    function getAndRevealPassword(){
+                        let password = document.getElementById("mypass").value;
+                        console.log("This is the password variable");
+                        console.log(password);
+                    }
+        </script>
+
+        <style>
+
+            #blueDiv{
+                background-color: whitesmoke;
+            }
+
+            .avantika {
+             width: 100%;
+             padding: 10px;
+             border: 1px solid #dfe1e5;
+             border-radius: 20px;
+             
+            }
+
+            .avantika:hover{
+                box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+                border-color: rgba(223,225,229,0);
+            }
+
+            .avantika:focus{
+                outline:none;
+            }
+
+            .avicontainer{
+            margin:auto;
+            padding-bottom:50px;
+            width: 582px;
+            }
+        </style>
+
+        <body>  
+            <div id='blueDiv'>
+
+                    <h1>CSS Example - The Google Search Bar</h1>
+                    
+                    <div class='avicontainer'>
+                            <input class='avantika' placeholder="Search">
+                    </div>
+
+                    <!--
+                        1. Make a div
+                        2. Put a button inside the div
+                        3. Inspect Google's button css 
+                        4. Use the css for your button 
+                        5. Make sure to handle the :hover :focus etc wale cases
+                    -->
+            </div>
+
+
+                <div>
+                        The Space between HTML tags is Inner HTML
+                </div>
+                    
+                <div style='background-color:cornflowerblue'>
+                    <h1>INLINE ELEMENTS</h1>
+                    <p>lists of inline elements</p>
+                    <ul>
+                        <li>a</li>
+                        <li>input</li>
+                        etc..
+                    </ul>
+                </div>
+                    
+                    <div style='background-color: orange;'>
+                    <h1>BLOCK ELEMENTS</h1>
+                    
+                    <p> List of block elements: </p>
+                    
+                        <ul>
+                            <li>p</li>
+                            <li>h1-h5</li>
+                            <li>div</li>
+                            etc...
+                        </ul>
+                        
+                    </div>
+                    
+                    <div style='background-color:darkgray'>
+                        <h1>The Input element and its attributes</h1>
+                        <ol>
+                            <li>
+                                sdlkjfklsd <input placeholder="Enter something here">
+                            </li>
+                            <li>
+                                Type <input id='mypass' type="password" placeholder="Enter your password">
+                            
+                                <button onclick='showPassword()'>Show Password</button>
+                                <button onclick='getAndRevealPassword()' >Show Password 2</button>
+                            </li>
+                        </ol> 
+                    </div>
+                    
+                    
+                    <div style='background-color:olivedrab'>
+                            <h1>Mouse, keyboard events</h1>
+                            <ul>
+                                <li>
+                                    <p onmouseover="alert('Mouse Pointer was here')"
+                                    onmouseout="alert('Mouse is gone')"
+                                    >
+                                        Come here!</p>
+                                </li>
+                            </ul> 
+                    </div>
+                    <!-- <div style='background-color: bisque; display: inline-block'>
+                        <p>This i s text</p>
+                        <p>This i s text</p>
+                        <p>This i s text</p>
+                        <p>This i s text</p>
+                    </div> -->
+                    
+                    
+                        <!-- <h1>Avantika </h1>
+                        <h2>Avantika</h2>
+                        <h3>Avantika</h3>
+                        <h4>Avantika</h4>
+                        <h5>Avantika</h5>
+                    
+                    
+                        <p>My name is Avantika</p>
+                    
+                        <div>   
+                            <a href='www.google.com'>This is a link</a>
+                        </div> -->
+                    
+                    
+                    
+                    
+                    
+        </body>
+
+  
+
+</html>
